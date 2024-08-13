@@ -21,7 +21,7 @@ The latest release can be found [here](https://github.com/monarch-initiative/sou
 
 | Focus Area        | # Sources Analyzed | Documentation                                                         | Latest Release        |
 |-------------------|--------------------|-----------------------------------------------------------------------|------------------------|
-| Gene to Disease   | 5                  | [G2D](https://monarch-initiative.github.io/source-data-analysis/g2d) |  [AUG 2024](#) |
+| Gene to Disease   | 5                  | [G2D](https://monarch-initiative.github.io/source-data-analysis/g2d) |  [AUG 2024](https://github.com/monarch-initiative/source-data-analysis/releases/tag/2024-08-13) |
 
 ## Installation and Setup
 
