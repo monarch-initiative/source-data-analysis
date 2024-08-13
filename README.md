@@ -11,17 +11,17 @@ Additional categories and data sources are also explored, aiming to provide a co
 
 ## Documentation
 
-For detailed documentation, please refer to [Documentation link](#https://monarch-initiative.github.io/source-data-analysis/).
+For detailed documentation, please refer to [Documentation link](https://monarch-initiative.github.io/source-data-analysis/).
 
 ## Latest Release
 
-The latest release can be found [here](#https://github.com/monarch-initiative/source-data-analysis/releases).
+The latest release can be found [here](https://github.com/monarch-initiative/source-data-analysis/releases).
 
 ## Focus Areas
 
 | Focus Area        | # Sources Analyzed | Documentation                                                         | Latest Release        |
 |-------------------|--------------------|-----------------------------------------------------------------------|------------------------|
-| Gene to Disease   | 5                  | [G2D](#https://monarch-initiative.github.io/source-data-analysis/g2d) |  [AUG 2024](#) |
+| Gene to Disease   | 5                  | [G2D](https://monarch-initiative.github.io/source-data-analysis/g2d) |  [AUG 2024](#) |
 
 ## Installation and Setup
 
