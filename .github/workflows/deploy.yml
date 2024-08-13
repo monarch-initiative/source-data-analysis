@@ -1,32 +1,38 @@
-name: Deploy MkDocs site to GitHub Pages
+name: Auto-Deploy Documentation
 
 on:
   push:
-    branches:
-      - main  # or the default branch for your repo
+    branches: [main]
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
-  deploy:
+  build-docs:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Python
-        uses: actions/setup-python@v2
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          python-version: '3.9'  # Specify exact Python version if needed
+          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install mkdocs mkdocs-material  # Add any additional plugins or themes here
-
-      - name: Build MkDocs site
-        run: mkdocs build --clean
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Set up Python 3
+        uses: actions/setup-python@v5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          python-version: "3.11"
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+
+      - name: Install Dependencies
+        run: poetry install --with dev --no-interaction
+
+      - name: Build Documentation
+        run: make docs
+
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: site
+          target-folder: docs
+          clean: true
