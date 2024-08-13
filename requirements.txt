@@ -1,0 +1,4 @@
+matplotlib==3.8.0
+pandas==2.1.1
+UpSetPlot==0.9.0
+venn==0.1.3

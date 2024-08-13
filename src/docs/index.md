@@ -1,0 +1,3 @@
+**Source Data Analysis** is dedicated to a comprehensive analysis of data from multiple sources to explore various biological and medical associations. By comparing data across numerous databases, the aim is to uncover insights into commonalities, discrepancies, and patterns that exist within and between these datasets.
+
+Key areas of focus include: **Gene-to-Disease** (G2D), **Gene-to-Phenotype** (G2P), **Disease-to-Phenotype** (D2P), etc. Additional categories and data sources are also explored, aiming to provide a comprehensive view of the intricate relationships in biomedical research.

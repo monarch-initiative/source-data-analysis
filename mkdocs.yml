@@ -1,0 +1,10 @@
+site_name: Source Data Analysis
+site_url: https://monarch-initiative.github.io/source-data-analysis/
+repo_url: https://github.com/monarch-initiative/source-data-analysis/
+docs_dir: src/docs
+theme: readthedocs
+
+nav:
+  - About: index.md
+  - Key areas:
+    - Gene to Disease: g2d.md
