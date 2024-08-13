@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://monarch-initiative.github.io/source-data-analysis/g2d/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Gene to Disease - Source Data Analysis</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Gene to Disease";
+        var mkdocs_page_input_path = "g2d.md";
+        var mkdocs_page_url = "/source-data-analysis/g2d/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Source Data Analysis
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">About</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Key areas</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Gene to Disease</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#sources">Sources</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mappings">Mappings</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#assets">Assets</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Source Data Analysis</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Key areas</li>
+      <li class="breadcrumb-item active">Gene to Disease</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/monarch-initiative/source-data-analysis/edit/master/docs/g2d.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="gene-to-disease-data-sources-comparison">Gene-to-Disease Data Sources Comparison</h2>
+<!--
+### Table of Contents
+
+1. [Sources](#sources)
+2. [Mappings](#mappings)
+3. [Artifacts](#artifacts)
+-->
+<hr />
+<p>The work involves an in-depth examination of gene-to-disease (G2D) associations by evaluating and comparing data from multiple sources. This comparison is crucial for assessing the consistency and completeness of G2D information across different databases.Through our comparative analysis, we assess:</p>
+<ul>
+<li><strong>Data Coverage:</strong> Evaluating how extensively each source covers known gene-disease associations.</li>
+<li><strong>Consistency:</strong> Identifying discrepancies and overlaps between sources to ensure data reliability.</li>
+<li><strong>Integration:</strong> Understanding how the information from different sources can be harmonized to enhance our knowledge base.</li>
+</ul>
+<p><img alt="G2D sources" src="../images/g2d_sources_mind_map.jpeg" />
+Click on the link to open the image: <a href="../images/g2d_sources_mind_map.jpeg">G2D sources</a></p>
+<p>Note: The figure provided does not comprehensively represent all sources or the full extent of gene-to-disease associations. It serves as a general overview.</p>
+<p>This comparative analysis plays a critical role in Monarch Initiative, where the refined and validated G2D associations are utilized to:</p>
+<ul>
+<li><strong>Build Comprehensive Knowledge Graphs:</strong> Integrating insights from various sources to create knowledge representations of gene-disease relationships.</li>
+<li><strong>Improve Data Accuracy:</strong> Refining datasets by cross-referencing multiple sources to ensure the highest quality of information.</li>
+<li><strong>Support Collaborative Research:</strong> Providing validated and consolidated data for use in collaborative projects and further research initiatives.</li>
+</ul>
+<hr />
+<h3 id="sources">Sources</h3>
+<p>The primary data sources we currently consider for analysis include:</p>
+<ul>
+<li><strong>HPO (Human Phenotype Ontology):</strong> <a href="https://hpo.jax.org/data/annotations">genes_to_disease.txt</a>  </li>
+</ul>
+<p>HPO provides a structured ontology for phenotypic abnormalities observed in human disease. The <code>genes_to_disease.txt</code> file contains gene-to-disease (G2D) associations based on phenotypic traits curated from various sources. HPO is widely used in genomic research for annotating genetic data, enabling the study of how genetic variations are related to specific human phenotypes.</p>
+<ul>
+<li><strong>MEDGEN:</strong> <a href="https://ftp.ncbi.nih.gov/gene/DATA/">mim2gene_medgen.txt</a>  </li>
+</ul>
+<p>MEDGEN is an NCBI (National Center for Biotechnology Information) resource that compiles information on the relationships between human genes and medical conditions. The <code>mim2gene_medgen.txt</code> file links OMIM (Online Mendelian Inheritance in Man) entries to their corresponding gene records, offering a comprehensive view of G2D relationships as compiled from multiple data sources.</p>
+<ul>
+<li><strong>ORPHANET:</strong> <a href="https://www.orphadata.com/genes/">en_product6.xml</a>  </li>
+</ul>
+<p>ORPHANET is a specialized reference portal for rare diseases and orphan drugs. The <code>en_product6.xml</code> file from ORPHADATA includes G2D associations, with a particular emphasis on rare and orphan conditions. This dataset is essential for research in rare diseases, providing insights that might be underrepresented in more general databases.</p>
+<ul>
+<li><strong>OMIM (Online Mendelian Inheritance in Man):</strong> <a href="https://www.omim.org/downloads/">morbidmap.txt</a>  </li>
+</ul>
+<p>OMIM is an authoritative resource for information on human genes and genetic disorders. The <code>morbidmap.txt</code> file maps genes to their associated diseases and phenotypes, drawing on extensive scientific literature and expert curation. OMIM's data is foundational in medical genetics, supporting both clinical practice and research into the genetic basis of disease.</p>
+<ul>
+<li><strong>GENCC (Gene Curation Coalition):</strong> <a href="https://search.thegencc.org/download/">gencc-submissions.tsv</a>  </li>
+</ul>
+<p>GENCC is a collaborative effort that aggregates gene curation data from multiple expert groups, focusing on the validity of G2D associations. The <code>gencc-submissions.tsv</code> file contains G2D associations supported by both clinical and experimental evidence. This dataset plays a critical role in understanding the clinical relevance of G2D relationships, particularly in the context of diagnostic genomics and personalized medicine. <em>For our analysis, only associations classified as moderate, strong, and definitive were considered.</em></p>
+<hr />
+<h3 id="mappings">Mappings</h3>
+<p>The primary normalization and mapping procedures we currently apply include:</p>
+<ul>
+<li><strong>Disease Normalization to MONDO:</strong> <a href="https://data.monarchinitiative.org/mappings/latest/mondo.sssom.tsv">mondo.sssom.tsv</a>  </li>
+</ul>
+<p>Diseases are normalized to the <strong>MONDO (MONDO Ontology)</strong> identifier to ensure consistent representation across datasets. MONDO integrates and harmonizes disease classifications from multiple sources, providing a unified framework for disease annotation. The <code>mondo.sssom.tsv</code> file contains mappings of various disease identifiers from source databases to their corresponding MONDO terms. This file uses the <strong>SSSOM (Simple Standard for Sharing Ontological Mappings)</strong> format, which provides a standardized way to represent and share mappings between different ontologies and identifiers.</p>
+<ul>
+<li><strong>Gene Normalization to HGNC:</strong> <a href="https://data.monarchinitiative.org/mappings/latest/gene_mappings.sssom.tsv">gene_mappings.sssom.tsv</a>  </li>
+</ul>
+<p>Genes are mapped to <strong>HGNC (HUGO Gene Nomenclature Committee)</strong> identifiers to standardize gene representation. HGNC provides a unique and consistent naming system for human genes, ensuring uniformity across different datasets. The <code>gene_mappings.sssom.tsv</code> file includes mappings of gene identifiers from various sources to their HGNC equivalents. This file also uses the <strong>SSSOM (Simple Standard for Sharing Ontological Mappings)</strong> format, facilitating consistent representation and sharing of gene mappings.</p>
+<p>These normalization and mapping procedures improve the integration and analysis of data from diverse sources, enhancing the accuracy and reliability of gene-to-disease research.</p>
+<hr />
+<h3 id="assets">Assets</h3>
+<p>The <code>g2d_analysis</code> script produces several assets that are provided with each release to offer insights into gene-to-disease (G2D) data analysis. These assets include various visualizations and spreadsheets that facilitate a comprehensive understanding of the data. Below are the descriptions to the generated assets:</p>
+<ul>
+<li>
+<p><strong>Venn Diagram</strong><br />
+<img alt="G2D Venn Diagram" src="../images/g2d_venn.png" /><br />
+  This image provides a Venn Diagram visualizing the overlap between different gene-to-disease associations. It helps to identify common and unique associations among various datasets.</p>
+</li>
+<li>
+<p><strong>Upset Plot</strong><br />
+<img alt="G2D Upset Plot" src="../images/g2d_upset_plot.png" /><br />
+  The Upset Plot offers a detailed view of the intersections between different gene-to-disease associations. It allows for a deeper analysis of the relationships and overlaps across datasets.</p>
+</li>
+<li>
+<p><strong>Consolidated Edges (Spreadsheet)</strong><br />
+  This spreadsheet consolidates all gene-to-disease edges from various sources into a single file. It provides a comprehensive overview of the associations across datasets.</p>
+<p><strong>Example Row:</strong></p>
+<table>
+<thead>
+<tr>
+<th>disease_id</th>
+<th>gene_id</th>
+<th>sources</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MONDO:0000023</td>
+<td>HGNC:15625</td>
+<td>HPO &#124; ORPHA</td>
+</tr>
+<tr>
+<td>MONDO:0000023</td>
+<td>HGNC:21876</td>
+<td>HPO &#124; ORPHA</td>
+</tr>
+<tr>
+<td>MONDO:0000030</td>
+<td>HGNC:1958</td>
+<td>GENCC</td>
+</tr>
+<tr>
+<td>MONDO:0000030</td>
+<td>HGNC:1962</td>
+<td>GENCC</td>
+</tr>
+<tr>
+<td>MONDO:0000070</td>
+<td>HGNC:10618</td>
+<td>HPO &#124; MEDGEN &#124; OMIM</td>
+</tr>
+<tr>
+<td>MONDO:0000070</td>
+<td>HGNC:10907</td>
+<td>HPO &#124; MEDGEN &#124; OMIM</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>Edges by Sources (Spreadsheet)</strong><br />
+  This spreadsheet details the gene-to-disease edges categorized by their source datasets. It allows for easy comparison of associations from different sources.</p>
+</li>
+<li>
+<p><strong>Unique Edges by Sources (Spreadsheet)</strong><br />
+  This spreadsheet highlights the unique gene-to-disease edges for each source dataset, helping to identify distinct associations not shared with other datasets.</p>
+</li>
+<li>
+<p><strong>Edge Difference Between Sources (Spreadsheet)</strong><br />
+  This spreadsheet captures the differences in gene-to-disease edges between source datasets, facilitating the comparison of associations across sources.</p>
+</li>
+<li>
+<p><strong>Missing Mappings (Spreadsheet)</strong><br />
+  This spreadsheet lists any missing mappings that could not be resolved between gene and disease identifiers, helping to identify gaps in the data.</p>
+</li>
+<li>
+<p><strong>Analysis Overview (Text)</strong><br />
+  The Analysis Overview provides a textual summary of the findings from the G2D analysis. It includes insights into the data, trends observed, and any notable patterns or anomalies.</p>
+</li>
+</ul>
+<p>These assets will be included with each release to provide up-to-date insights and facilitate ongoing analysis and review.</p>
+<hr />
+<h2 id="github-releases">GitHub Releases</h2>
+<p>For information on the latest releases of the source data analysis scripts, including updates and new features, please visit our <a href="https://github.com/monarch-initiative/source-data-analysis/releases">GitHub Releases page</a>. </p>
+<p>Each release on this page provides:</p>
+<ul>
+<li><strong>Release Notes:</strong> Detailed descriptions of the changes, updates, and fixes included in the release.</li>
+<li><strong>Download Links:</strong> Direct links to download the release assets, such as scripts, data files, and documentation.</li>
+<li><strong>Version History:</strong> A record of all previous releases, allowing you to track the evolution of the project over time.</li>
+</ul>
+<p>Stay updated with the latest developments and improvements by checking our releases page regularly.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="About"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/monarch-initiative/source-data-analysis/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
